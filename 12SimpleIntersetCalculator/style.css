@@ -1,0 +1,52 @@
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: #b3ffae;
+  width: 500px;
+  border-radius: 5px;
+}
+button[type="submit"] {
+  background-color: rgb(76, 210, 76);
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  max-height: max-content;
+}
+
+button:hover {
+  background-color: rgb(0, 78, 29);
+  color: whitesmoke;
+}
+.cal {
+  text-align: center;
+  margin-top: 10px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+select[name="periodunit"] {
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+

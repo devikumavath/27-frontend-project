@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect key pressed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <p class="text">press any key</p>
+        <div class="content">
+            <div class="key-code"></div>
+            <div class="key-name"></div>
+            <div class="details">
+                <p class="key"> key : <span></span></p>
+                <p class="code"> code : <span></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="logic.js"></script> -->
+    <script>
+    const box = document.querySelector(".box");
+    document.addEventListener("keydown" , e =>{
+        let keyName = e.keycode === 32 ? "space" : e.key;
+        box.querySelector(".key-code").innerText = e.keyCode;
+        box.querySelector(".key-name").innerText = keyName;
+        box.querySelector(".key span").innerText = keyName;
+        box.querySelector(".code span").innerText = e.keyCode;
+       box.classList.add("active");
+        console.log(e);
+
+});
+
+// console.log("hiii");
+    </script>
+</body>
+</html>

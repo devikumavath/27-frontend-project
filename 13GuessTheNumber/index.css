@@ -1,0 +1,51 @@
+body {
+  background-color: #333232;
+}
+
+#container {
+  background-color: #0e2431;
+
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  color: white;
+  margin: auto;
+  height: 400px;
+  width: 800px;
+  border-radius: 5px;
+  border: 2px solid #f5e4c3;
+}
+
+#btn {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 7px;
+
+  width: 100px 100px;
+  padding: 14px;
+}
+
+#btn:hover {
+  background-color: goldenrod;
+}
+
+p {
+  color: white;
+}
+
+#userinput {
+  width: 100px 100px;
+
+  padding: 14px;
+  border: none;
+}
+
+#outputtext {
+  font-size: smaller;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

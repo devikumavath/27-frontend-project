@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Interest Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+        <div class="heading">
+
+            <h2> Calculate simple interest 💰💱</h2>
+        </div>
+
+
+        <form>
+
+          <p>
+
+      <div class="p">
+        <label>enter princple amount(p):</label>
+        <input type="text" id="p" placeholder="enter amount(rs)" />
+      </div>
+      <div class="r">
+        <label>enter rate (r):</label>
+        <input type="text" id="r" placeholder="enter rate(%)" />
+      </div>
+      <div class="t">
+        <label>enter period of time (t):</label>
+        <input type="text" id="t" placeholder="enter time" />
+      </div>
+
+      <div class="period">
+        <label for="period">period unit:</label>
+
+        <select name="periodunit" id="period">
+          <option value="days">days</option>
+          <option value="weeks">weeks</option>
+          <option value="months">months</option>
+          <option value="quarters">quarters</option>
+          <option value="years">years</option>
+        </select>
+      </div>
+      <div class="cal">
+        <button type="submit" name="si" class="si"  onclick="SI()">calculate simple interset</button>
+      </div>
+    </p>
+  </form>
+  <div class="result">
+    <p class="interset-earned"></p>
+    <p class="princple-amount"></p>
+    <p class="total-value"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

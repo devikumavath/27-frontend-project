@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addition of two numbers</title>
+    <style>
+        body{
+            background-color: rgb(248, 248, 155);
+        }
+       
+    </style>
+</head>
+<body>
+   <div id="container">
+   number 1:<input type="text" name="number1" id="number1"  value="">
+    <br> <br>
+   number 2:<input type="text" name="number2" id="number2"  value="">
+    <br> <br>
+
+   <input type="button" value="add" name="sumbit"  id="add"  onclick="add()">
+   <br> <br>
+ total :  <input type="text" class="answer" id="answer" value="" >
+
+   </div> 
+
+   <script>
+    function add() {
+        const val1 = parseInt(document.getElementById("number1").value);
+        // console.log(val1);
+
+        const val2 = parseInt(document.getElementById("number2").value);
+        // console.log(val2);
+
+        const total = document.getElementById("answer");
+
+       
+
+        total.value = val1+val2;
+        // console.log(total.value);
+    }
+   </script>
+</body>
+</html>

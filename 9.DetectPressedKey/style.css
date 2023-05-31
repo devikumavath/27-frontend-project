@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #17a2b8;
+}
+
+.text,
+.key-code,
+.key-name {
+  font-size: 45px;
+  color: #17a2b8;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.box.active .text {
+  display: none;
+}
+.box {
+  background: #fff;
+  width: 290px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.content,
+.key-code,
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .content {
+  flex-direction: column;
+  display: none;
+}
+
+.box.active .content {
+  display: flex;
+}
+
+.content .key-code {
+  border: 5px solid #17a2b8;
+  height: 110px;
+  width: 110px;
+  margin-bottom: 15px;
+  border-radius: 5px solid #17a2b8;
+  border-radius: 50%;
+}
+
+.text,
+.key-code,
+.key-name {
+  font-size: 45px;
+  color: #17a2b8;
+  font-weight: 500;
+}
+
+.content .details {
+  width: 100%;
+  margin-top: 15px;
+  justify-content: space-evenly;
+}
+
+.details p {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.details p:last-child {
+  border-left: 1px solid #bfbfbf;
+}

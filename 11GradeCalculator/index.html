@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <style>
+      body {
+        background: #33d9b2;
+        font: 12px;
+      }
+
+      body,
+      button,
+      input {
+        font-family: "righteous", cursive;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        text-transform: capitalize;
+      }
+      .background {
+        display: flex;
+        min-height: 100vh;
+      }
+      .container {
+        flex: 01700px;
+        margin: auto;
+        padding: 10px;
+      }
+      .screen {
+        position: relative;
+        background: #3e3e3e;
+        border-radius: 15px;
+      }
+
+      .screeen::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        border-radius: 15px;
+        box-shadow: 020px 40px rgba(0, 0, 0, 4);
+        z-index: -1;
+      }
+
+      .screen-body {
+        display: flex;
+      }
+
+      .screen-body-item {
+        flex: 1;
+        padding: 50px;
+      }
+
+      .screen-body-item.left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .app-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #33d9bf;
+        font-size: 26px;
+        text-transform: uppercase;
+        border-left: 4px solid #218c74;
+        padding: 10px;
+      }
+
+      .app-form-group {
+        margin-bottom: 15px;
+      }
+
+      .app-form-group.buttons {
+        margin-bottom: 0;
+        text-align: right;
+      }
+      .app-form-control {
+        width: 100%;
+        padding: 10px 0;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #666;
+        color: #ddd;
+        font-size: 14px;
+        text-transform: uppercase;
+        outline: none;
+        transition: border-color 0.2s;
+      }
+      .app-form-control::placeholder {
+        border-bottom-color: #fff;
+      }
+      .app-formcontol:focus {
+        border-bottom-color: #ddd;
+      }
+      .app-form-button {
+        background: none;
+        border: none;
+        color: #33d9d2;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+        text-transform: uppercase;
+      }
+
+      .app-form-button:hover {
+        color: #218c74;
+      }
+
+      .showdata {
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: -10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <div class="animated infinite pulse">
+                  telangana ssc <br />
+                  10th grade <br />
+                  calculator
+                </div>
+              </div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="TELUGU"
+                    id="telugu"
+                  />
+                </div>
+
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="HINDI"
+                    id="hindi"
+                  />
+                </div>
+
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="ENGLISH"
+                    id="english"
+                  />
+                </div>
+
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="MATH"
+                    id="math"
+                  />
+                </div>
+
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="SCIENCE"
+                    id="science"
+                  />
+                </div>
+
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="SOCIAL"
+                    id="social"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="button"
+                    name=""
+                    value="showpercentage"
+                    class="app-form-button"
+                    onclick="cal()"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-form-group showdata">
+            <p id="showdata"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cal = () => {
+        let telugu = document.getElementById("telugu").value;
+        let hindi = document.getElementById("hindi").value;
+        let english = document.getElementById("english").value;
+        let math = document.getElementById("math").value;
+        let science = document.getElementById("science").value;
+        let social = document.getElementById("social").value;
+
+        let grades = "";
+        let totalGrades =
+          parseFloat(telugu) +
+          parseFloat(hindi) +
+          parseFloat(english) +
+          parseFloat(math) +
+          parseFloat(science) +
+          parseFloat(social);
+
+        let perc = (totalGrades / 600) * 100;
+
+        if (perc <= 100 && perc >= 90) {
+          grades = "A1";
+        } else if (perc <= 89 && perc >= 80) {
+          grades = "A2";
+        } else if (perc <= 79 && perc >= 70) {
+          grades = "B1";
+        } else if (perc <= 69 && perc >= 60) {
+          grades = "B2";
+        } else if (perc <= 59 && perc >= 50) {
+          grades = "C1";
+        } else if (perc <= 49 && perc >= 40) {
+          grades = "C2";
+        } else if (perc <= 39 && perc >= 30) {
+          grades = "D1";
+        } else if (perc <= 29 && perc >= 20) {
+          grades = "D2";
+        } else {
+          grades = "E";
+        }
+
+        if (perc >= 20) {
+          document.getElementById(
+            "showdata"
+          ).innerHTML = ` out of 600 your total is ${totalGrades} and percenrage is ${perc}%  <br>  your grade is ${grades} . you are pass.`;
+        } else {
+          document.getElementById(
+            "showdata"
+          ).innerHTML = ` out of 600 your total is ${totalGrades} and percenrage is ${perc}%  <br>  your grade is ${grades} . you are fail.`;
+        }
+      };
+    </script>
+  </body>
+</html>
