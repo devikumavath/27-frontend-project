@@ -5,14 +5,10 @@ const result = document.getElementById("result");
 
 const btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
-
-
   if (pInput.value === "" || rInput.value === "" || nInput.value === "") {
     alert("Please enter data in all fields.");
     return;
   }
-
-
 
   const p = parseFloat(pInput.value);
   const r = parseFloat(rInput.value);

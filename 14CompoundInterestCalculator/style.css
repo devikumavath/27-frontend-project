@@ -17,7 +17,6 @@ body {
 }
 
 h1 {
-
   font-family: sans-serif;
 }
 
@@ -28,7 +27,6 @@ h1 {
   /* color: white; */
   display: flex;
   align-items: center;
-
 }
 
 .formgroup label {
@@ -39,7 +37,7 @@ h1 {
 #btn {
   text-transform: capitalize;
   padding: 10px;
- 
+
   border: none;
   margin-top: 10px;
   border-radius: 7px;
