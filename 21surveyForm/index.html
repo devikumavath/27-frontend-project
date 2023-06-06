@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Ads Survey</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>YouTube Ads Survey</h2>
+    <form id="surveyForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="frequency">Frequency of Watching YouTube:</label>
+        <select id="frequency" name="frequency" required>
+          <option value="">Select</option>
+          <option value="Everyday">Everyday</option>
+          <option value="Few times a week">Few times a week</option>
+          <option value="Once a week">Once a week</option>
+          <option value="Less than once a week">Less than once a week</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ads">Which ads do you see more frequently on YouTube?</label>
+        <select id="ads" name="ads" required>
+          <option value="">Select</option>
+          <option value="Product Ad">Product Ad</option>
+          <option value="Service Ad">Service Ad</option>
+          <option value="Food and Beverage Ad">Food and Beverage Ad</option>
+          <option value="Technology Ad">Technology Ad</option>
+          <option value="Entertainment Ad">Entertainment Ad</option>
+          <option value="Travel Ad">Travel Ad</option>
+          <option value="Automotive Ad">Automotive Ad</option>
+          <option value="Fashion and Beauty Ad">Fashion and Beauty Ad</option>
+          <option value="Health and Fitness Ad">Health and Fitness Ad</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
