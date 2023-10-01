@@ -18,8 +18,6 @@ body {
   border-radius: 3px;
   margin-top: 50px;
 
-  
-
   background: #1bd496;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -36,8 +34,8 @@ body {
 }
 
 h3 {
-    text-align: center;
-    font-weight: smaller;
+  text-align: center;
+  font-weight: smaller;
 }
 
 #btn {

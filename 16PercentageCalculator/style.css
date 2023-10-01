@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +61,6 @@ input[type="number"] {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
 #Calculate:hover {

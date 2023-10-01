@@ -1,67 +1,65 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f77754;
-  }
-  
-  .container {
-    height: 320px;
-    width: 50%;
-    padding: 20px;
-    position: relative;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-  
-  .color-card {
-    background-color: #f77754;
-    position: absolute;
-    height: 280px;
-    width: 280px;
-    top: 40px;
-    left: -50px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    border-radius: 30px 0px 30px 30px;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
-    margin-left: 0;
-    position: relative;
-  }
-  
-  #span {
-    display: block;
-    color: #fff;
-    font-size: 40px;
-    margin: 40px;
-    text-transform: uppercase;
-  }
-  
-  #button {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 12px 20px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 22px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f77754;
+}
 
+.container {
+  height: 320px;
+  width: 50%;
+  padding: 20px;
+  position: relative;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 10px;
+  background-color: #fff;
+}
 
-  #hex {
-    font-size: 22px;
-    margin-bottom: 22px;
-  }
-  
+.color-card {
+  background-color: #f77754;
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  top: 40px;
+  left: -50px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 30px 0px 30px 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  margin-left: 0;
+  position: relative;
+}
+
+#span {
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  margin: 40px;
+  text-transform: uppercase;
+}
+
+#button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#hex {
+  font-size: 22px;
+  margin-bottom: 22px;
+}

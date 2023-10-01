@@ -1,22 +1,17 @@
-const get = document.getElementById('get'); 
-const btn = document.getElementById('btn');
+const get = document.getElementById("get");
+const btn = document.getElementById("btn");
 
+btn.addEventListener("click", async () => {
+  const getJoke = await fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      accept: "application/json",
+    },
+  });
 
-btn.addEventListener('click' , async () => {
-    const getJoke =  await fetch('https://icanhazdadjoke.com/' , {
+  const data = await getJoke.json();
+  const joke = data.joke;
 
-    headers : {
-        accept : 'application/json'
-    }
+  get.innerText = joke;
 
-    })
-
-    const  data = await getJoke.json()
-    const joke = data.joke
-
-    get.innerText = joke;
-
-
-
-    console.log(joke);
-})
+  console.log(joke);
+});

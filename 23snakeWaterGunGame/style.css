@@ -1,70 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1 {
-    margin: 20px 0;
-  }
-  
-  .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  
-  .option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .option img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    opacity: 0.8;
-    background-color: transparent;
-   
-  }
-  
-  #result {
-    font-size: 24px;
-    font-weight: bold;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
+h1 {
+  margin: 20px 0;
+}
 
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  opacity: 0.8;
+  background-color: transparent;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 .choices {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .choices > div {
-    margin: 10px;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.choices > div {
+  margin: 10px;
+  font-weight: bold;
+}

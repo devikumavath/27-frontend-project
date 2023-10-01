@@ -13,9 +13,9 @@ function getNewColor() {
   }
   document.body.style.background = color;
   colorCard.style.background = color;
-  hex.innerHTML = color
+  hex.innerHTML = color;
 }
 
 btn.addEventListener("click", getNewColor);
 
-// getNewColor();
+
